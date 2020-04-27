@@ -14,3 +14,10 @@ the leading space in above snippet is intentional*, will (~typically) allow perf
 also, you do need the mariadb in azure of course. this is already relatively banal, but without that, pfft.
 
 *:[whole reason i made this md file]
+
+----- 
+
+edit:
+
+seems to also require at-least github.com/go-sql-driver/mysql@v1.4, perhaps even v1.5. (a toml w/ v1.3 in-part got me here)
+> src: https://github.com/go-sql-driver/mysql/commit/9181e3a86a19bacd63e68d43ae8b7b36320d8092#diff-eeb2e1d2b086ffdc5e8a6e60178702aa
