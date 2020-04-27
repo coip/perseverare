@@ -9,7 +9,7 @@ import (
 )
 
 //needs: username, password, host, default_schema
-const dsnform = "%s:%s@tcp(%s:3306)/%s"
+const dsnform = "%s:%s@tcp(%s:3306)/%s?tls=true"
 
 var dsn string = fmt.Sprintf(dsnform,
 	os.Getenv("username"),
