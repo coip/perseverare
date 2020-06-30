@@ -12,7 +12,7 @@ import (
 const dsnform = "%s:%s@tcp(%s:3306)/%s?tls=true"
 
 var dsn string = fmt.Sprintf(dsnform,
-	os.Getenv("username"),
+	os.Getenv("username") + "@" + os.Getenv("host"),
 	os.Getenv("password"),
 	os.Getenv("host"),
 	os.Getenv("default_schema"),
